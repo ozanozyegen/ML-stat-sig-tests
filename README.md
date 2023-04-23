@@ -1,9 +1,9 @@
-# ML-stat-sig-tests
+# ML Statistical Significance Tests
 This repository provides statistical significance test implementations for comparing various Machine Learning models using a single dataset.
 
 The existing implementations were specifically designed to work with certain types of estimators (e.g., sklearn estimators). Therefore, this repository shares implementations of these tests that can be used with any ML model by simply integrating the experiment results.
 
-## Tests
+## Test Procedures
 Before applying the methods below, divide your dataset into two parts: a training set and a test set. For Combined 5x2CV tests, repeat the splitting process (50% training and 50% test data) five times.
 Assuming we are comparing two estimators A and B, in each of the five iterations, we fit A and B to the training split and evaluate their performance on the test split. We then swap the training and test sets (the train set becomes the test set, and the test set becomes the train set) and calculate the performance again, resulting in two performance measurements.
 
